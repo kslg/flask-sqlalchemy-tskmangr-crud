@@ -140,8 +140,18 @@ and then `debug` is of course `DEBUG`.
 
 ------
 
-Finally, we need to render some sort of front-end template to verify that the application is running successfully.
-Within our taskmanager package, let's create a new directory called 'templates', which
-is where Flask looks for any HTML templates to be rendered.
-Then, within this templates directory, we will create a new file called base.html, which
-is what will be rendered from our routes.py file.
+`templates > base.html`
+
+Finally, we `need to render some sort of front-end template to verify that the application is running successfully`.
+Within our taskmanager package, let's create a new directory called `'templates'`, which
+is `where Flask looks for any HTML templates to be rendered`.
+Then, within this templates directory, we will create a new file called `base.html`, which
+is `what will be rendered from our routes.py file`.
+
+We'll keep it simple for now, and generate a basic HTML template by typing html:5, then hitting the tab key.
+
+Attempt to run this application from within the Terminal.
+We can type `python3 run.py` in order to launch our main file, `which will import the necessary taskmanager package and all of its dependencies we've specified.`
+
+Note: If you happen to see a `warning about Track Modifications for SQLAlchemy`, this can be
+ignored, as they will eventually disable this in the future.
