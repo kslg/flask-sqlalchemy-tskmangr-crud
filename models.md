@@ -60,7 +60,7 @@ that these equate to self.id, self.task_name, and self.is_urgent.
 ------
 `will need to also create this 'taskmanager' database.`
 
-Let's navigate to the Terminal, and login to the Postgres CLI by typing 'psql' and hitting enter.
+Let's navigate to the Terminal, and login to the Postgres CLI by `typing 'psql' and hitting enter.`
 To create the database, we can simply type:
 `CREATE DATABASE taskmanager;`
 
@@ -100,7 +100,9 @@ Access the Python interpreter by typing "python3" and enter.
 we need to import our 'db' variable found within the taskmanager package, so type:
 `from taskmanager import db`
 
-Now, using db, we need to perform the `db.create_all()` method:
+Now, using db, we need to perform the `db.create_all()` method.
+
+That's it, pretty simple enough, our `Postgres database should be populated with these two tables and their respective columns and relationships.`
 
 ------
 `Exit Python Interpreter`
