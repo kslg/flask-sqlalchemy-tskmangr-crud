@@ -1,0 +1,10 @@
+/* A sticky footer always stays on the bottom of the page regardless of how little content is on the page. */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
