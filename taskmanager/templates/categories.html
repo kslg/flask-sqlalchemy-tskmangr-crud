@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3 class="light-blue-text text-darken-4 center-align">Categories</h3>
+
+<div class="row">
+    <div class="col s12 center-align">
+        <a href="{{ url_for('add_category') }}" class="btn-large light-blue darken-2">
+            Add Category <i class="fas fa-plus-square right"></i>
+        </a>
+    </div>
+</div>
+<!-- This will extend our base.html template.
+This means that by extending from the base template, anything created on our base template
+will display on this page as well, which includes our navbar and footer. -->
+
+{% endblock %}
