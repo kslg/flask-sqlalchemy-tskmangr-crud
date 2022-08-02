@@ -27,3 +27,4 @@ def add_category():
 
 # Whenever you use the url_for() method on your links, it's important to note that these are
 # calling the actual Python functions (def home, etc), not the app.route, even though these are often the same name.
+# Check the imports at the top of the page are correct.
