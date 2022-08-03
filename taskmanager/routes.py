@@ -37,6 +37,14 @@ def edit_category(category_id):
     return render_template("edit_category.html", category=category)
 
 
+# DELETE record from the DB
+@app.route("/delete_category/<int:category_id>")
+def delete_category(category_id):
+    category = Category.query.get_or_404(category_id)
+    db.session.delete(category)
+    db.session.commit()
+    return redirect(url_for("categories"))
+
 
 # Whenever you use the url_for() method on your links, it's important to note that these are
 # calling the actual Python functions (def home, etc), not the app.route, even though these are often the same name.
