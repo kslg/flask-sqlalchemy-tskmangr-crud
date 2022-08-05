@@ -14,7 +14,9 @@ will display on this page as well, which includes our navbar and footer. -->
     </div>
 </div>
 
+<!-- Allows you to READ Records from the Database -->
 <!-- This for-loop will iterate over each task within our list of all tasks. -->
+<!-- Code in white is Jinja templating-->
 <ul class="collapsible">
     {% for task in tasks|sort(attribute="due_date") %}
     <li>
