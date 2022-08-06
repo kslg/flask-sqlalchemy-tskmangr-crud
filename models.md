@@ -118,3 +118,20 @@ psql -d taskmanager
 \dt
 
 ------
+
+
+`OTHER`
+
+`backref="category" >>>> ondelete="CASCADE"`
+
+If you recall, we created a relationship between our Category and Task models, using a 'backref' and the 'ondelete' cascade.
+Now that we have full CRUD functionality for both of these tables, let's see how that works together.
+Once again for demonstration purposes, I'm going to create a new Category called "Test",
+and two new tasks that use this new category.
+As you can see, for the category, they both use the new "Test" category.
+The reason we add the backref and delete cascade, has to do with the fact that if the "Test"
+category gets deleted, then we will show an error on these two Tasks for having invalid categories.
+However, once the backref and delete cascade are added, if we decide to delete the "Test"
+category, then it will perform a cascade effect and delete any task utilizing this category.
+
+------
